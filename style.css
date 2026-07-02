@@ -1,0 +1,100 @@
+body {
+  font-family: helvetica;
+  background: #1a1a1a;
+  color: #ccc;
+  padding: 30px;
+}
+
+h1 { color: #fff; margin-bottom: 20px; }
+
+label { color: #aaa; }
+
+input {
+  background: #2c2c2c;
+  border: 1px solid #444;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin: 0 10px 20px 6px;
+}
+
+button {
+  background: #ff8c00;
+  color: #fff;
+  border: none;
+  padding: 8px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+button:hover { background: #e07a00; }
+
+#resultado {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.boxes {
+  display: flex;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.box {
+  flex: 1;
+  padding: 20px;
+  border-radius: 14px;
+  background: #2c2c2c;
+  border: 2px solid #444;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #888;
+  transition: all 0.4s ease;
+}
+
+.box.ativo {
+  background: #2c1a00;
+  border-color: #ff8c00;
+  color: #ff8c00;
+  box-shadow:
+    0 0 12px #ff8c00,
+    0 0 30px rgba(255, 140, 0, 0.4),
+    0 0 60px rgba(255, 140, 0, 0.15);
+}
+#tabela-imc {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+}
+
+#tabela-imc th {
+  background: #2c2c2c;
+  color: #ff8c00;
+  padding: 12px 16px;
+  text-align: left;
+  font-family: courier;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #ff8c00;
+}
+
+#tabela-imc td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #2c2c2c;
+  color: #888;
+  font-size: 15px;
+}
+
+#tabela-imc tr:hover td {
+  background: #1e1e1e;
+  color: #ccc;
+}
+
+#tabela-imc tr.ativo td {
+  color: #ff8c00;
+  background: #2c1a00;
+  border-left: 3px solid #ff8c00;
+}    
