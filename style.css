@@ -12,6 +12,12 @@ h2 { font-size: medium;
      font-style: italic;
      }
 
+h3 {
+     font-size: small;
+     color: #aaa;
+     font-weight: lighter;
+}
+
 
 label { color: #aaa; }
 
